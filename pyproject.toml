@@ -1,0 +1,19 @@
+[project]
+name = "bcparks-dayuse"
+version = "0.1.0"
+description = "Scan a website for item availability using Playwright"
+readme = "README.md"
+authors = [
+    { name = "Ichiro Wang", email = "ichiwang27@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "playwright>=1.63.0",
+]
+
+[project.scripts]
+main = "bcparks_dayuse:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
